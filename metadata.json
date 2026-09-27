@@ -1,0 +1,6 @@
+{
+  "name": "Yogyata: Student Opportunity and Benefit Navigator",
+  "description": "Discover Maharashtra and Central government schemes, hardware device initiatives, eligibility verification matching, and teacher guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
