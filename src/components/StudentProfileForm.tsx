@@ -316,7 +316,7 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
         <div className="space-y-3 pt-3 border-t border-slate-100">
           <div className="font-bold text-slate-800 text-xs flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4 text-amber-600" />
-            <span>Special Status Entitlements (Check all that apply):</span>
+            <span>Special Status Entitlements:</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -332,16 +332,6 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
                 <span className="text-[10px] text-slate-500">Residing away from native home</span>
               </div>
             </label>
-
-            <label className="p-3 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white cursor-pointer flex items-start gap-2.5 transition-colors">
-              <input
-                type="checkbox"
-                checked={localProfile.marginalFarmerChild}
-                onChange={(e) => handleChange('marginalFarmerChild', e.target.checked)}
-                className="mt-0.5 rounded text-amber-600 focus:ring-amber-500"
-              />
-            </label>
-
             <label className="p-3 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white cursor-pointer flex items-start gap-2.5 transition-colors">
               <input
                 type="checkbox"
@@ -376,10 +366,10 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
             {saveSuccess ? (
               <span className="text-emerald-700 font-bold flex items-center gap-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
-                Profile updated & strict criteria matching refreshed!
+                Profile updated & criteria matching refreshed!
               </span>
             ) : (
-              <span>Updating dropdown criteria re-evaluates all 59 schemes immediately.</span>
+              <span>Updating dropdown criteria re-evaluates all schemes immediately.</span>
             )}
           </div>
 
@@ -388,7 +378,7 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
             className="px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-xs flex items-center gap-2 cursor-pointer shadow-xs transition-colors ml-auto"
           >
             <Save className="w-3.5 h-3.5" />
-            <span>Save Profile & Refresh Strict Matches</span>
+            <span>Save Profile & Refresh Matches</span>
           </button>
         </div>
       </div>
