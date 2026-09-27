@@ -194,7 +194,7 @@ export const PersonalizedSchemeList: React.FC<PersonalizedSchemeListProps> = ({
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
             <span>
-              Strict Criteria Verification Active: Matched to <strong>{profile.category}</strong> ·{' '}
+             Criteria Verification Active: Matched to <strong>{profile.category}</strong> ·{' '}
               <strong>₹{profile.annualFamilyIncome.toLocaleString('en-IN')}</strong> ·{' '}
               <strong>{profile.educationLevel}</strong> ({profile.percentage}%)
             </span>

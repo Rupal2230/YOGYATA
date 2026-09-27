@@ -196,7 +196,7 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({
                   </div>
                   <p className="text-amber-800 text-xs font-semibold">{scheme.hardware_delivered}</p>
                   <p className="text-[11px] text-amber-700 pt-1">
-                    Statutory Rule: Government-issued devices carry asset tracking IMEI / serial numbers and are strictly non-transferable.
+                    Statutory Rule: Government-issued devices carry asset tracking IMEI / serial numbers and are non-transferable.
                   </p>
                 </div>
               )}

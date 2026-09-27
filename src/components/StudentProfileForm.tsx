@@ -136,13 +136,13 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
           <div className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
             Eligibility Parameter Verification
           </div>
-          <h2 className="text-lg font-bold">Student Profile & Strict Matching Criteria</h2>
+          <h2 className="text-lg font-bold">Student Profile & Matching Criteria</h2>
           <p className="text-xs text-slate-400 mt-0.5">
-            Schemes are strictly matched against these parameters. Any criterion not met will hide the scheme.
+            Schemes are matched against these parameters. Any criterion not met will hide the scheme.
           </p>
         </div>
         <div className="text-right hidden sm:block">
-          <span className="text-[10px] uppercase font-bold text-slate-400 block">Strict Matches</span>
+          <span className="text-[10px] uppercase font-bold text-slate-400 block"> Matches</span>
           <span className="text-2xl font-bold text-emerald-400 tabular-nums">{matchingCount.likely}</span>
         </div>
       </div>
@@ -169,7 +169,7 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
               onChange={(e) => handleChange('gender', e.target.value as 'male' | 'female' | 'other')}
               className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50 focus:bg-white text-xs font-semibold cursor-pointer"
             >
-              <option value="female">Female (Enables Pragati & Girl Scholarships)</option>
+              <option value="female">Female</option>
               <option value="male">Male</option>
               <option value="other">Other</option>
             </select>
@@ -182,8 +182,8 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
               onChange={(e) => handleChange('isMaharashtraDomicile', e.target.value === 'yes')}
               className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-slate-50 focus:bg-white text-xs font-semibold cursor-pointer"
             >
-              <option value="yes">Yes (Holds Maharashtra Domicile)</option>
-              <option value="no">No (Outside Maharashtra)</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
             </select>
           </div>
         </div>
@@ -340,10 +340,6 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
                 onChange={(e) => handleChange('marginalFarmerChild', e.target.checked)}
                 className="mt-0.5 rounded text-amber-600 focus:ring-amber-500"
               />
-              <div>
-                <span className="font-bold text-slate-800 block text-xs">Marginal Farmer (7/12)</span>
-                <span className="text-[10px] text-slate-500">Parent holds 7/12 Land Record</span>
-              </div>
             </label>
 
             <label className="p-3 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white cursor-pointer flex items-start gap-2.5 transition-colors">
