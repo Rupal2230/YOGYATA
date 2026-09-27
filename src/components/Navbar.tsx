@@ -64,7 +64,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {t.appTitle}
                 </span>
                 <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 uppercase">
-                  59 Schemes
                 </span>
               </div>
               <div className="text-[10px] text-slate-500 font-medium hidden sm:block">
